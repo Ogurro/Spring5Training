@@ -20,6 +20,7 @@ public class Publisher {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
+    @Column(name = "address_line_1")
     private String addressLine1;
     private String city;
     private String state;
