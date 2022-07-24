@@ -25,6 +25,8 @@ public class Book {
             joinColumns = @JoinColumn(name = "book_id"),
             inverseJoinColumns = @JoinColumn(name = "author_id"))
     private Set<Author> authors = new HashSet<>();
+    @ManyToOne
+    private Publisher publisher;
 
     public Book(String title, String isbn) {
         this.title = title;
