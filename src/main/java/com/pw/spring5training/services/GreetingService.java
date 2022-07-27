@@ -1,4 +1,4 @@
-package com.pw.spring5training.services.dependencyInjection;
+package com.pw.spring5training.services;
 
 public interface GreetingService {
 

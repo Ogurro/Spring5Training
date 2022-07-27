@@ -1,5 +1,6 @@
 package com.pw.spring5training.services.dependencyInjection;
 
+import com.pw.spring5training.services.GreetingService;
 import org.springframework.stereotype.Service;
 
 @Service
