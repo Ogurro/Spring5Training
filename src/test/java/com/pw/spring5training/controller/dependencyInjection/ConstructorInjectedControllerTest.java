@@ -1,6 +1,6 @@
 package com.pw.spring5training.controller.dependencyInjection;
 
-import com.pw.spring5training.services.GreetingServiceImpl;
+import com.pw.spring5training.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,12 +12,12 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructorInjectedController(new GreetingServiceImpl());
+        controller = new ConstructorInjectedController(new ConstructorGreetingService());
     }
 
     @Test
     void getGreeting() {
-        assertEquals("Hello World", controller.getGreeting());
+        assertEquals("Hello World - Constructor", controller.getGreeting());
     }
 
 }
