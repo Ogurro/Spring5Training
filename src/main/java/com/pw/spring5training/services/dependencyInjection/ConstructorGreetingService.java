@@ -1,4 +1,4 @@
-package com.pw.spring5training.services;
+package com.pw.spring5training.services.dependencyInjection;
 
 import org.springframework.stereotype.Service;
 

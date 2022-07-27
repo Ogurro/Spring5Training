@@ -1,6 +1,6 @@
 package com.pw.spring5training.controller.dependencyInjection;
 
-import com.pw.spring5training.services.ConstructorGreetingService;
+import com.pw.spring5training.services.dependencyInjection.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

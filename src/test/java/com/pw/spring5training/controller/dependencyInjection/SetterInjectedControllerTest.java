@@ -1,6 +1,6 @@
 package com.pw.spring5training.controller.dependencyInjection;
 
-import com.pw.spring5training.services.SetterGreetingService;
+import com.pw.spring5training.services.dependencyInjection.SetterGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
