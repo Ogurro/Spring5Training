@@ -1,6 +1,6 @@
 package com.pw.spring5training.controller.dependencyInjection;
 
-import com.pw.spring5training.services.GreetingServiceImpl;
+import com.pw.spring5training.services.PropertyGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,12 +13,12 @@ class PropertyInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new PropertyInjectedController();
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new PropertyGreetingService();
     }
 
     @Test
     void getGreeting() {
-        assertEquals("Hello World", controller.getGreeting());
+        assertEquals("Hello World - Property", controller.getGreeting());
     }
 
 }

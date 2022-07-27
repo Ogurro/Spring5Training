@@ -1,15 +1,14 @@
 package com.pw.spring5training.controller.dependencyInjection;
 
 import com.pw.spring5training.services.GreetingService;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class ConstructorInjectedController {
+public class PrimaryInjectedController {
 
     private final GreetingService greetingService;
 
-    public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
+    public PrimaryInjectedController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
